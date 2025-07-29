@@ -11,6 +11,7 @@ export class ProductController {
         return this.productService.findAll();
     }
 
+
     @Post()
     async createProduct(@Body() productData: Product) {
         return this.productService.create(productData);
